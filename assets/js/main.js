@@ -107,7 +107,18 @@
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
-
+  let backtocall = select('.back-to-call')
+  if (backtocall) {
+    const toggleBacktotop = () => {
+      if (window.scrollY > 100) {
+        backtocall.classList.add('active')
+      } else {
+        backtocall.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleBacktotop)
+    onscroll(document, toggleBacktotop)
+  }
   /**
    * Mobile nav toggle
    */
@@ -186,7 +197,7 @@
         spaceBetween: 80
       },
       992: {
-        slidesPerView: 6,
+        slidesPerView: 5,
         spaceBetween: 120
       }
     }
@@ -327,7 +338,7 @@ $(document).ready(function(){
 
   // Typing
   var typed = new Typed(".type",{
-      strings: ["Website Designing", "Ecommerce Development", "Better UI/UX", "Portal-Development", "Data Science & Analytics", ],
+      strings: ["Website Designing", "Ecommerce Development", "Better Learning Management System", "Portal-Development", "Data Analytics", ],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true,
