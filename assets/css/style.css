@@ -6,6 +6,10 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
   font-size: 16px;
+  -webkit-user-select: none; 
+  -moz-user-select: none;   
+  -ms-user-select: none;    
+  user-select: none; 
 }
 
 a {
@@ -793,6 +797,7 @@ section {
   border-radius: 20rem;
   font-weight: bold;
   border: 3px solid #4154f1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   /* border-bottom: 3px solid #4154f1; */
 }
 
@@ -1587,6 +1592,7 @@ section {
 .clients .clients-slider .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
+  width: 80%;
 }
 
 .clients .clients-slider .swiper-slide img:hover {
@@ -1677,6 +1683,9 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.hidden {
+  display: none;
+}
 .contact .info-box {
   color: #444444;
   background: #fafbff;
@@ -2523,7 +2532,7 @@ section {
     grid-template-columns: 37.5% 37.5%;
     gap: 4%;
     margin: 2% 12.5%;
-
+margin-bottom: 4rem;
     .box {
       text-align: center;
       border-radius: 24px;
@@ -2549,7 +2558,7 @@ section {
     grid-template-columns: auto;
     gap: 1%;
     margin: 2% auto;
-
+margin-bottom: 12rem;
     .box {
       text-align: center;
       border-radius: 24px;
