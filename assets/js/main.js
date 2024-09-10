@@ -393,6 +393,6 @@ window.addEventListener("load", function() {
   const hash = window.location.hash;
   if (hash) {
     const tab = document.querySelector(`a[href="${hash}"]`);
-    if (tab) tab.click();  // Simulate a click on the tab to activate it
+    if (tab) tab.click();
   }
 });
