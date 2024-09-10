@@ -197,7 +197,7 @@
         spaceBetween: 80
       },
       992: {
-        slidesPerView: 5,
+        slidesPerView: 4,
         spaceBetween: 120
       }
     }
@@ -338,7 +338,7 @@ $(document).ready(function(){
 
   // Typing
   var typed = new Typed(".type",{
-      strings: ["Website Designing", "Ecommerce Development", "Better Learning Management System", "Portal-Development", "Data Analytics", ],
+      strings: ["Website Designing", "E-commerce Development", "Better Learning Management System", "Portal-Development", "Data Analytics", ],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true,
@@ -375,4 +375,15 @@ $(document).ready(function(){
 
 
 
+});
+
+
+//form 
+document.getElementById('service-select').addEventListener('change', function() {
+  var projectInput = document.getElementById('project-input');
+  if (this.value === 'other') {
+      projectInput.classList.remove('hidden');
+  } else {
+      projectInput.classList.add('hidden');
+  }
 });
