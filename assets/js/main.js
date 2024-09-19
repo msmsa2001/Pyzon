@@ -387,3 +387,12 @@ document.getElementById('service-select').addEventListener('change', function() 
       projectInput.classList.add('hidden');
   }
 });
+
+// services 
+window.addEventListener("load", function() {
+  const hash = window.location.hash;
+  if (hash) {
+    const tab = document.querySelector(`a[href="${hash}"]`);
+    if (tab) tab.click();
+  }
+});
